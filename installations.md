@@ -15,7 +15,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 ## GIT
 
 ``` powershell
-choco install git
+choco install git --version 2.35.1.2 -y
 $Env:Path += ";C:\Program Files\Git"
 ```
 
@@ -32,3 +32,10 @@ Install-Module oh-my-posh -Scope CurrentUser
 ``` powershell
 Update-Module oh-my-posh
 ```
+
+## VSCODE
+
+``` powershell
+choco install vscode --version 1.64.2 -y
+```
+
