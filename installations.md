@@ -28,6 +28,11 @@ https://ohmyposh.dev/docs/windows
 Install-Module oh-my-posh -Scope CurrentUser
 ```
 
+### IMPORT
+``` powershell
+Import-Module oh-my-posh
+```
+
 ### UPDATE
 ``` powershell
 Update-Module oh-my-posh

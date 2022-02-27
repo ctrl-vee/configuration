@@ -1,0 +1,69 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "console_title": true,
+  "console_title_style": "template",
+  "console_title_template": "{{if .Root}}(Admin){{end}} {{.Path}}",
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": false,
+      "segments": [
+        {
+          "type": "session",
+          "style": "plain",
+          "foreground": "#BF616A",
+          "properties": {
+            "prefix": "",
+            "template": "{{ .UserName }}"
+          }
+        },
+        {
+          "type": "path",
+          "style": "plain",
+          "foreground": "#81A1C1",
+          "properties": {
+            "prefix": "",
+            "style": "full"
+          }
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left"
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "executiontime",
+          "style": "plain",
+          "foreground": "#A3BE8C",
+          "properties": {
+            "style": "austin"
+          }
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "exit",
+          "style": "plain",
+          "foreground": "#B48EAD",
+          "foreground_templates": ["{{ if gt .Code 0 }}#BF616A{{ end }}"],
+          "properties": {
+            "template": "\u276f",
+            "prefix": "",
+            "always_enabled": true
+          }
+        }
+      ]
+    }
+  ]
+}
