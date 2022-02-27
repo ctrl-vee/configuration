@@ -44,3 +44,26 @@ Update-Module oh-my-posh
 choco install vscode --version 1.64.2 -y
 ```
 
+## NOTEPAD++
+
+``` powershell
+choco install notepadplusplus
+```
+
+## VISUAL STUDIO 2017
+
+https://github.com/jberezanski/ChocolateyPackages/blob/master/chocolatey-visualstudio.extension/EXAMPLES.md
+
+``` powershell
+
+```
+
+## VISUAL STUDIO 2019
+``` powershell
+
+```
+
+## VISUAL STUDIO 2022
+``` powershell
+
+```
