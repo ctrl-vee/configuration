@@ -16,6 +16,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 ``` powershell
 choco install git
+$Env:Path += ";C:\Program Files\Git"
 ```
 
 ## OH MY POSH
