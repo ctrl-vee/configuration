@@ -1,4 +1,11 @@
-# Chocolatey Installs
+# Config
+
+## INSTALLS
+
+### Install WSL
+> https://docs.microsoft.com/en-us/windows/wsl/install
+
+
 
 ## CHOCOLATEY
 
@@ -79,27 +86,14 @@ Import-Module -Name posh-git,oh-my-posh,Terminal-Icons
 choco install notepadplusplus
 ```
 
-### VISUAL STUDIO 2017 ENTERPRISE
-
-https://github.com/jberezanski/ChocolateyPackages/blob/master/chocolatey-visualstudio.extension/EXAMPLES.md
-
-``` powershell
-choco install visualstudio2017enterprise -y
-```
-
-### VISUAL STUDIO 2019
-``` powershell
-
-```
-
-### VISUAL STUDIO 2022
-``` powershell
-
-```
-
 ### SQL Server Management Studio
 ``` powershell
 choco install sql-server-management-studio -y
+```
+
+### DOCKER DESKTOP
+``` powershell
+choco install docker-desktop -y
 ```
 
 ### JETBRAINS
@@ -115,8 +109,11 @@ choco install jetbrainstoolbox -y
 choco install vscode -y
 ```
 
-#### Visual Studio Code PowerShell Extension
-``` powershell
-choco install vscode-powershell -y
-```
-
+#### Extensions
+* Auto Rename Tag
+* Code Runner
+* HTML CSS Support
+* Markdown All in One
+* Powershell - Microsoft
+* Workspace Explorer
+* 

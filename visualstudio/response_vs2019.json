@@ -1,0 +1,26 @@
+{
+    "installChannelUri": ".\\ChannelManifest.json",
+    "channelUri": "\\\\server\\share\\layoutdirectory\\ChannelManifest.json",
+    "installCatalogUri": ".\\Catalog.json",
+    "channelId": "VisualStudio.16.Release",
+    "productId": "Microsoft.VisualStudio.Product.Enterprise",
+
+    "useLatestInstaller": false,
+  
+    "installPath": "C:\\VS2019",
+    "quiet": false,
+    "passive": false,
+    "includeRecommended": true,
+    "norestart": false,
+  
+    "addProductLang": [
+      "en-US",
+      "fr-FR"
+      ],
+  
+      "add": [
+          "Microsoft.Net.ComponentGroup.DevelopmentPrerequisites",
+          "Microsoft.VisualStudio.Component.NuGet.BuildTools",
+          "Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup"
+      ]
+  }
