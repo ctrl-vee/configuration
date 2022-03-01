@@ -12,58 +12,111 @@ Set-ExecutionPolicy Bypass -Scope Process
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
-## GIT
+## Other Programs
+
+### 7-Zip
+``` powershell
+choco install 7zip -y
+```
+
+### Google Chrome
+``` powershell
+choco install googlechrome -y
+```
+
+### Mozilla Firefox
+``` powershell
+choco install firefox -y
+```
+
+### VLC media player
+``` powershell
+choco install vlc -y
+```
+
+## Developer Tools
+
+### GIT
 
 ``` powershell
-choco install git --version 2.35.1.2 -y
+choco install git -y
 $Env:Path += ";C:\Program Files\Git"
 ```
 
-## OH MY POSH
+### OH MY POSH
 
 https://ohmyposh.dev/docs/windows
 
-### INSTALL
+#### INSTALL
 ``` powershell
 Install-Module oh-my-posh -Scope CurrentUser
 ```
 
-### IMPORT
+#### IMPORT
 ``` powershell
 Import-Module oh-my-posh
 ```
 
-### UPDATE
+#### UPDATE
 ``` powershell
 Update-Module oh-my-posh
 ```
 
-## VSCODE
-
+#### INIT
 ``` powershell
-choco install vscode --version 1.64.2 -y
+oh-my-posh --init --shell pwsh --config C:\Users\<username>\.oh-my-posh\themes\nordtron.omp.json | Invoke-Expression
 ```
 
-## NOTEPAD++
+#### Additional Modules
+``` powershell
+Install-Module -Name posh-git,oh-my-posh,Terminal-Icons -Repository PSGallery
+Import-Module -Name posh-git,oh-my-posh,Terminal-Icons
+```
+
+### NOTEPAD++
 
 ``` powershell
 choco install notepadplusplus
 ```
 
-## VISUAL STUDIO 2017
+### VISUAL STUDIO 2017 ENTERPRISE
 
 https://github.com/jberezanski/ChocolateyPackages/blob/master/chocolatey-visualstudio.extension/EXAMPLES.md
 
 ``` powershell
-
+choco install visualstudio2017enterprise -y
 ```
 
-## VISUAL STUDIO 2019
+### VISUAL STUDIO 2019
 ``` powershell
 
 ```
 
-## VISUAL STUDIO 2022
+### VISUAL STUDIO 2022
 ``` powershell
 
 ```
+
+### SQL Server Management Studio
+``` powershell
+choco install sql-server-management-studio -y
+```
+
+### JETBRAINS
+
+#### JetBrains Toolbox App
+``` powershell
+choco install jetbrainstoolbox -y
+```
+
+### Visual Studio Code
+
+``` powershell
+choco install vscode -y
+```
+
+#### Visual Studio Code PowerShell Extension
+``` powershell
+choco install vscode-powershell -y
+```
+
